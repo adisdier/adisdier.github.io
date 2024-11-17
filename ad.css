@@ -33,6 +33,15 @@
                 border-radius: 4pt;
                 border-color: #A6CE39;
             }
+            .c-button.scholar {
+                display: inline-flex;
+                align-items: center;
+                gap: 10px;
+                cursor: pointer;
+                border: 2px solid transparent;
+                border-radius: 4pt;
+                border-color: #3983fe;
+            }
             .c-button.rg {
                 display: inline-flex;
                 align-items: center;

@@ -9,6 +9,40 @@
                 color: #3a3c5e;
                 text-align: center;
             }
+	    .header {
+                  position: relative;
+                  display: flex;
+                  align-items: center;
+                  height: 300px; /* adjust as needed */
+	    }
+	    #photo {
+                  height: 200px;
+                  margin-left: 16px;
+	    }
+	    #general-info {
+		  position: absolute;
+                  left: 50%;
+                  transform: translateX(-50%);
+                  text-align: center;
+	    }
+            /* ---------- MOBILE ---------- */
+            @media (max-width: 640px) {
+              .header {
+                flex-direction: column;
+                height: auto;
+                padding: 1rem 0;
+              }
+            
+              #photo {
+                margin-bottom: 0.5rem;
+              }
+            
+              #general-info {
+                position: static;
+                transform: none;
+                white-space: normal;
+              }
+            }
             .header-info {
                 font-size: 12pt;
                 text-align: center;

@@ -9,6 +9,40 @@
                 color: #3a3c5e;
                 text-align: center;
             }
+	    .header {
+                  position: relative;
+                  display: flex;
+                  align-items: center;
+                  height: 300px; /* adjust as needed */
+	    }
+	    #photo {
+                  height: 200px;
+                  margin-left: 16px;
+	    }
+	    #general-info {
+		  position: absolute;
+                  left: 50%;
+                  transform: translateX(-50%);
+                  text-align: center;
+	    }
+            /* ---------- MOBILE ---------- */
+            @media (max-width: 640px) {
+              .header {
+                flex-direction: column;
+                height: auto;
+                padding: 1rem 0;
+              }
+            
+              #photo {
+                margin-bottom: 0.5rem;
+              }
+            
+              #general-info {
+                position: static;
+                transform: none;
+                white-space: normal;
+              }
+            }
             .header-info {
                 font-size: 12pt;
                 text-align: center;
@@ -94,48 +128,6 @@
             .logos img {
                 display: inline; 
                 margin: 0 5px;
-            }
-
-            .teaching-table  {
-                border-collapse:collapse;
-                border-color:#93a1a1;
-                border-spacing:0;
-                text-align:center;
-                vertical-align:middle;
-                font-family:Arial, sans-serif;
-                font-size:14px;
-                font-weight:normal;
-                overflow:hidden;
-                padding:10px 5px;
-                word-break:normal;
-            }
-            .teaching-table th{
-                background-color:#657b83;
-                border-style:solid;
-                border-width:1px;
-                color:#fdf6e3;
-            }
-            .teaching-table td{
-                background-color:#fdf6e3;
-                border-color:#93a1a1;
-                border-style:solid;
-                border-width:1px;
-                color:#002b36;
-                font-family:Arial, sans-serif;
-                font-size:14px;
-                overflow:hidden;
-                padding:10px 5px;
-                word-break:normal;
-            }
-            .teaching-table .teaching-table-col-header{
-                font-weight: bold;
-            }
-            .teaching-table .teaching-table-row-header{
-                background-color:#fffc9e;
-                border-color:inherit;
-                font-weight:bold;
-                text-align:center;
-                vertical-align:middle
             }
 
             footer {
